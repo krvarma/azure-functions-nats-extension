@@ -366,4 +366,4 @@ If everything goes well, you can see the debug log from the function.
 
 ![enter image description here](https://raw.githubusercontent.com/krvarma/azure-functions-nats-extension/master/images/natstrigger.gif)
 
-In the next part, we will look into how to create NATS bindings, till then Happy Coding.
+In the next part, we will look into how to create NATS bindings, till then Happy Coding!.
