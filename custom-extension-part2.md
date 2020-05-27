@@ -1,5 +1,5 @@
 # Custom Azure Function Extension - Part 2 - Bindings
-![Cover Image](https://raw.githubusercontent.com/krvarma/azure-functions-nats-extension/master/images/azfn-nats-trigger.png)
+![Custom Binding](https://raw.githubusercontent.com/krvarma/azure-functions-nats-extension/master/images/azfn-nats-binding.png)
 This article is part two of the two-part series. In my previous article, we looked into how to create a custom trigger. In this article, we will look into how to create a custom binding. 
 
 Since this a continuation of my previous article, I highly recommend reading part one before this one so that you get a basic idea of fundamentals of the custom extension and what are going to build.
