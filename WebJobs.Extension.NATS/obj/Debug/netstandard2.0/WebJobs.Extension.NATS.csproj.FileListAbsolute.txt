@@ -1,0 +1,9 @@
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/bin/Debug/netstandard2.0/WebJobs.Extension.NATS.deps.json
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/bin/Debug/netstandard2.0/WebJobs.Extension.NATS.dll
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/bin/Debug/netstandard2.0/WebJobs.Extension.NATS.pdb
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/obj/Debug/netstandard2.0/WebJobs.Extension.NATS.csproj.CoreCompileInputs.cache
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/obj/Debug/netstandard2.0/WebJobs.Extension.NATS.AssemblyInfoInputs.cache
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/obj/Debug/netstandard2.0/WebJobs.Extension.NATS.AssemblyInfo.cs
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/obj/Debug/netstandard2.0/WebJobs.Extension.NATS.dll
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/obj/Debug/netstandard2.0/WebJobs.Extension.NATS.pdb
+/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/obj/Debug/netstandard2.0/WebJobs.Extension.NATS.csprojAssemblyReference.cache
