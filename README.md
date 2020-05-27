@@ -1,4 +1,7 @@
 # Custom Azure Function Extension - Part 1 - Triggers
+
+![NATS Extension](https://raw.githubusercontent.com/krvarma/azure-functions-nats-extension/master/images/azfn-nats-trigger.png)
+
 In my [previous article](https://medium.com/swlh/rabbitmq-trigger-and-azure-functions-8826633bf54c), we have explored how to use Azure Function and RabbitMQ. RabbitMQ Extension is a built-in extension provided by Microsoft. Azure Function also supports writing custom extensions. We can use the WebJobs SDK to write custom extensions.
 
 This article is part one of the two-part series. In this article, we will look into how to create a custom trigger. In part two, we will look into how to create a custom binding. Combining two articles into one will make it very large and will difficult to read and understand.
@@ -360,5 +363,7 @@ Publish a message to the Channel using the following command:
     node.js publish.js SampleChannel "Aure Function and Nats are awesome."
 
 If everything goes well, you can see the debug log from the function.
+
+![enter image description here](https://raw.githubusercontent.com/krvarma/azure-functions-nats-extension/master/images/natstrigger.gif)
 
 In the next part, we will look into how to create NATS bindings, till then Happy Coding.
