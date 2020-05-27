@@ -3,7 +3,8 @@
 /* jslint node: true */
 'use strict';
 
-var nats = require('nats').connect("nats://<username>:<password>@localhost:4222");
+var nats = require('nats').connect("nats://krv:var753ma@localhost:4222");
+var args = process.argv.slice(2)
 
 nats.on('error', function(e) {
     console.log('Error [' + nats.options.url + ']: ' + e);
@@ -15,7 +16,7 @@ nats.on('close', function() {
     process.exit();
 });
 
-var subject = "SampleChannelOut1"
+var subject = args[0]
 
 if (!subject) {
     console.log('Usage: node-sub <subject>');
