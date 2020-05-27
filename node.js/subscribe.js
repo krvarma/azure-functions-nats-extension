@@ -3,7 +3,7 @@
 /* jslint node: true */
 'use strict';
 
-var nats = require('nats').connect("nats://krv:var753ma@localhost:4222");
+var nats = require('nats').connect("nats://<username>:<password>@localhost:4222");
 
 nats.on('error', function(e) {
     console.log('Error [' + nats.options.url + ']: ' + e);
