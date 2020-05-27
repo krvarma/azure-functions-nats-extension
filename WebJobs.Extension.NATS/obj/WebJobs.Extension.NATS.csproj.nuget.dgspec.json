@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj": {}
+    "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj": {}
   },
   "projects": {
-    "/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj": {
+    "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj",
+        "projectUniqueName": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj",
         "projectName": "WebJobs.Extension.NATS",
-        "projectPath": "/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj",
+        "projectPath": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj",
         "packagesPath": "/Users/krishnaraj.varma/.nuget/packages/",
-        "outputPath": "/Users/krishnaraj.varma/projects/WebJobs.Extension.NATS/WebJobs.Extension.NATS/obj/",
+        "outputPath": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/krishnaraj.varma/.config/NuGet/NuGet.Config"

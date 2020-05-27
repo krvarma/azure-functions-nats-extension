@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/Trigger.Sample/Trigger.Sample.csproj": {}
+  },
+  "projects": {
+    "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/Trigger.Sample/Trigger.Sample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/Trigger.Sample/Trigger.Sample.csproj",
+        "projectName": "Trigger.Sample",
+        "projectPath": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/Trigger.Sample/Trigger.Sample.csproj",
+        "packagesPath": "/Users/krishnaraj.varma/.nuget/packages/",
+        "outputPath": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/Trigger.Sample/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/krishnaraj.varma/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj": {
+                "projectPath": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Sdk.Functions": {
+              "target": "Package",
+              "version": "[3.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj",
+        "projectName": "WebJobs.Extension.NATS",
+        "projectPath": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/WebJobs.Extension.NATS.csproj",
+        "packagesPath": "/Users/krishnaraj.varma/.nuget/packages/",
+        "outputPath": "/Users/krishnaraj.varma/blogs/azure-functions-nats-extension/WebJobs.Extension.NATS/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/krishnaraj.varma/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.Azure.WebJobs.Extensions": {
+              "target": "Package",
+              "version": "[3.0.6, )"
+            },
+            "MyNatsClient": {
+              "target": "Package",
+              "version": "[0.14.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

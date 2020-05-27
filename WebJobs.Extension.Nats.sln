@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJobs.Extension.Nats", "WebJobs.Extension.NATS\WebJobs.Extension.NATS.csproj", "{E6A3BCE1-9803-4426-919C-AE61EEB1ABC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trigger.Sample", "NATSBinding.Sample\Trigger.Sample.csproj", "{F49214EA-0D88-4E52-AEE1-8B83A054D3B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trigger.Sample", "Trigger.Sample\Trigger.Sample.csproj", "{F49214EA-0D88-4E52-AEE1-8B83A054D3B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bindings.Sample", "Bindings.Sample\Bindings.Sample.csproj", "{EE8C66FB-542A-47CC-93C1-BAF150CCF15A}"
 EndProject
