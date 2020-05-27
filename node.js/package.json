@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "nats": "^0.7.29"
+  }
+}
