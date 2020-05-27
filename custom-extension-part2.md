@@ -179,5 +179,7 @@ You can use the Postman or other similar tools to test this sample function. I h
     });
 
 If everything goes well, you can see the message on the console.
+
 ![NATS Binding](https://raw.githubusercontent.com/krvarma/azure-functions-nats-extension/master/images/natsbinding.gif)
+
 I hope you enjoy this article and got a preliminary knowledge of how to create custom extensions for Azure Functions.
