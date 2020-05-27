@@ -29,33 +29,33 @@ To create a custom Trigger, we need to:
 
  -  Define a class that extends from Attribute. This class represents our attribute class. We define all the parameters and configuration values for our trigger. In our case, we define connection string and NATS channels.
  -  Define a class that implements the interface `IListener`. This class contains the logic to connect to our external event source and wait for events. In our case, we will connect to the NATS server and look for incoming messages. The IListener interface has the following functions:
-	 - `StartAsync`:- The system calls this function to start our listener. This function returns one Task object that completes when our listener successfully started.
-	 - `StopAsync`:- The system calls this function to stop our listener. This function returns one Task object that completes when the listener completely stopped.
-	 - `Cancel`:- The system calls this function to cancel any ongoing listen operation.
-	 - `Dispose`:- IDisposable's dispose function.
+	 - *StartAsync*:- The system calls this function to start our listener. This function returns one Task object that completes when our listener successfully started.
+	 - *StopAsync*:- The system calls this function to stop our listener. This function returns one Task object that completes when the listener completely stopped.
+	 - *Cancel*:- The system calls this function to cancel any ongoing listen operation.
+	 - *Dispose*:- IDisposable's dispose function.
 
  -  Define a class that implements the interface `ITriggerBinding`. In this class, we create our listener and bind our trigger data. The ITriggerBinding interface has the following functions:
-	-  `CreateListenerAsync`:- The system calls this function to create a listener. This function returns a Task object that has our listener.
-	-  `BindAsync`:- This function is called to bind a specified value using a binding context. When our listener receives an event, we try to execute the function, passing the event data. This event data is encapsulated in a `TriggeredFunctionData` class and send to the Azure Function. In the `BindAsync`, we will bind this value to our corresponding data. This function returns a `TriggerData` class. `TriggerData` class accepts a class that implements an `IValueBinder` interface and a read-only dictionary. We will revisit this later in this article.
-	-  `ToParameterDescriptor`:- The system calls this function to get a description of the binding.
+	-  *CreateListenerAsync*:- The system calls this function to create a listener. This function returns a Task object that has our listener.
+	-  *BindAsync*:- This function is called to bind a specified value using a binding context. When our listener receives an event, we try to execute the function, passing the event data. This event data is encapsulated in a `TriggeredFunctionData` class and send to the Azure Function. In the `BindAsync`, we will bind this value to our corresponding data. This function returns a `TriggerData` class. `TriggerData` class accepts a class that implements an `IValueBinder` interface and a read-only dictionary. We will revisit this later in this article.
+	-  *ToParameterDescriptor*:- The system calls this function to get a description of the binding.
 
  -  Define a class that implements the interface `IValueBinder`. As I explained in the `BindAsync` section, we are binding the trigger data to our data class using this class. The `IValueBinder` has three methods:
 
-	 -  `GetValueAsync`:- Returns a task that has the value object.
-	 -  `SetValueAsync`: - Returns a task that completes when the object to our data class completes.
-	 -  `ToInvokeString`:- Returns object string.
+	 -  *GetValueAsync*:- Returns a task that has the value object.
+	 -  *SetValueAsync*: - Returns a task that completes when the object to our data class completes.
+	 -  *ToInvokeString*:- Returns object string.
 
  -  Define a class that implements the interface `ITriggerBindingProvider`. This class is a provider class that returns a class that implements the `ITriggerBinding` interface. This class has the following function:
 
-	 -  `TryCreateAsync`:- The system call this function to get a class that implements the `ITriggerBinding` interface. The system will pass a `TriggerBindingProviderContext` class as a parameter. In this function, we check whether the `TriggerBindingProviderContext` object contains our custom attribute. If the `Attribute` is present, we will create TriggerBinding class and return a Task.
+	 -  *TryCreateAsync*:- The system call this function to get a class that implements the `ITriggerBinding` interface. The system will pass a `TriggerBindingProviderContext` class as a parameter. In this function, we check whether the `TriggerBindingProviderContext` object contains our custom attribute. If the `Attribute` is present, we will create TriggerBinding class and return a Task.
 
  -  Create a class that implements the interface `IExtensionConfigProvider`. The `IExtensionConfigProvider` defines an interface enabling third party extension to register. The interface has the following function:
 
-	 -  `Initialize`:- In this function, we will register all our triggers and bindings.
+	 -  *Initialize*:- In this function, we will register all our triggers and bindings.
 
  -  And finally, we create a class that implements the interface `IWebJobStartup`. This interface defines the configuration actions to perform when the Function Host starts up. This interface has the following function:
 
-	 -  `Configure`:- The system call this function when the function host initializes. In this function, we will add our custom extension.
+	 -  *Configure*:- The system call this function when the function host initializes. In this function, we will add our custom extension.
 
 So basically what happens is when the system starts, it searches for a class that implements  `IWebJobStartup`. When it found a class that implements the interface: 
 
