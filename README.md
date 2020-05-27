@@ -87,7 +87,7 @@ As I mentioned before, we need to create an `Attribute` class first. Our attribu
         public class NatsTriggerAttribute: Attribute
         {
             // <summary>
-            // Connection string in the form of nats://krvarma:var753ma@localhost
+            // Connection string in the form of nats://<username>:<password>@localhost
             // </summary>
             public string Connection { get; set; }
             // Channel string
