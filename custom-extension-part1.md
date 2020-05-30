@@ -4,9 +4,9 @@
 
 In my [previous article](https://medium.com/swlh/rabbitmq-trigger-and-azure-functions-8826633bf54c), we have explored how to use Azure Function and RabbitMQ. RabbitMQ Extension is a built-in extension provided by Microsoft. Azure Function also supports writing custom extensions. We can use the WebJobs SDK to write custom extensions.
 
-This article is part one of the two-part series. In this article, we will look into how to create a custom trigger. In part two, we will look into how to create a custom binding. Combining two articles into one will make it very large and will difficult to read and understand.
+This article is part one of the two-part series on how to write a custom extension for Azure Function. In this article, we will look into how to create a custom trigger. In part two, we will look into how to create a custom binding. Combining two articles into one will make it very large and will difficult to read and understand.
 
-In this series of articles, we will explore how to create a custom extension. We will create an extension for the [NATS](https://nats.io/) messaging system. 
+In this series of articles, we will explore how to create [NATS](https://nats.io/)  custom extension. 
 
 ## NATS messaging system
 NATS is a simple, secure, and highly scalable messaging system. It is a perfect fit for Microservice architecture, IoT applications, cloud-native applications, etc. 
@@ -14,7 +14,7 @@ NATS is a simple, secure, and highly scalable messaging system. It is a perfect 
 NATS can run on a large cloud instance and also in low-end devices like edge devices or IoT devices. It is a [CNCF](https://www.cncf.io/) project and integrates with Kubernetes and other modern systems.
 
 ## Azure Function Custom Extension
-We can develop Azure Functions custom extensions using [Azure WebJob SDK](https://github.com/Azure/azure-webjobs-sdk).
+We can use [Azure WebJob SDK](https://github.com/Azure/azure-webjobs-sdk) to develop Azure Functions custom extensions.
 
 There are two types of extension, a Trigger, and Bindings. The trigger causes a function to run. In most of the cases, a trigger will have data associated with it. The Azure Function receives this trigger data as a parameter.
 
@@ -22,7 +22,7 @@ Binding is a method to connect other resources to the function. Input binding re
 
 An Attribute class defines every Trigger and Binding. An Attribute class defines all the parameters and configuration values for the trigger or extension.
 
-Attribute class is a crucial component in custom extension. When a consumer defines a trigger or binding, the system looks for a corresponding attribute class and initialize it. For example, if a consumer specifies a RabbitMQTrigger trigger, the system looks for RabbitMQAttribute class. When a consumer specifies a RabbitMQ binding, the system looks for RabbitMQAttribute. Similarly, for KafkaTrigger, the system looks for KafkaTriggerAttribute, for Kafka binding, the system looks for KafkaAttribute.
+Attribute class is a crucial component in custom extension. When a consumer defines a trigger or binding, the system looks for a corresponding attribute class and initialize it. For example, if a consumer specifies a RabbitMQTrigger trigger, the system looks for RabbitMQTriggerAttribute class. When a consumer specifies a RabbitMQ binding, the system looks for RabbitMQAttribute. Similarly, for KafkaTrigger, the system looks for KafkaTriggerAttribute, for Kafka binding, the system looks for KafkaAttribute.
 
 ## Custom Trigger
 To create a custom Trigger, we need to:
