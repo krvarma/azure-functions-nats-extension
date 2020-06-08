@@ -55,7 +55,7 @@ namespace WebJobs.Extension.Nats
         /// <returns>A Task returned from Subscribe method</returns>
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            return _context.Client.Subscribe(_context.TriggerAttribute.Channel, stream => stream.Subscribe(msg => {
+            return _context.Client.Subscribe(_context.TriggerAttribute.Channel, _context.TriggerAttribute.QueueGroup, stream => stream.Subscribe(msg => {
                 var triggerData = new TriggeredFunctionData
                 {
                     TriggerValue = msg.GetPayloadAsString()

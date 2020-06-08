@@ -11,11 +11,13 @@ namespace WebJobs.Extension.Nats
     public class NatsTriggerAttribute: Attribute
     {
         // <summary>
-        // Connection string in the form of nats://krvarma:var753ma@localhost
+        // Connection string in the form of nats://user:password@localhost
         // </summary>
         public string Connection { get; set; }
         // Channel string
         public string Channel { get; set; }
+        // QueueGroup string
+        public string QueueGroup { get; set; }
 
         // <siummary>
         // Helper method to get connection string from environment variables

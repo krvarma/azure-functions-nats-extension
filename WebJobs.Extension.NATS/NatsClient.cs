@@ -60,10 +60,13 @@ namespace WebJobs.Extension.Nats
         /// </summary>
         /// <param name="subject">Channel string</param>
         /// <param name="subscription">Subscription lambda</param>
+        /// <param name="queueGroup">QueueGroup name</param>
         /// <returns>Returns a Task that completes when the subscription ends</returns>
-        public Task<ISubscription> Subscribe(string subject, Func<INatsObservable<MsgOp>, IDisposable> subscription)
+        public Task<ISubscription> Subscribe(string subject, string queueGroup, Func<INatsObservable<MsgOp>, IDisposable> subscription)
         {
-            return _client.SubAsync(subject, subscription);
+            SubscriptionInfo sinfo = new SubscriptionInfo(subject, queueGroup);
+
+            return _client.SubAsync(sinfo, subscription);
         }
 
         /// <summary>
